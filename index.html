@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Birthday Made of Little Things 💗</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="decor decor-one">🌷</div>
+  <div class="decor decor-two">⭐</div>
+  <div class="decor decor-three">🦋</div>
+  <div class="decor decor-four">🍓</div>
+
+  <main>
+    <section class="hero">
+      <div class="sticker">🎀</div>
+      <p class="eyebrow">A tiny website, a whole lot of love</p>
+      <h1>Happy Birthday,<br><span>Sunshine!</span></h1>
+      <p class="intro">
+        Someone very special deserves a day full of magic.
+        This little corner of the internet is just for you. 💗
+      </p>
+      <a class="start-button" href="#surprises">Let's celebrate! ↓</a>
+      <div class="hero-stickers">
+        <span>🧸</span><span>💐</span><span>🍰</span>
+      </div>
+    </section>
+
+    <section class="section" id="surprises">
+      <p class="eyebrow">Your little surprise menu</p>
+      <h2>What would you like to open?</h2>
+      <p class="section-intro">Choose a card and see what’s waiting inside ✨</p>
+
+      <div class="card-grid">
+        <button class="surprise-card pink" data-surprise="letter">
+          <span class="card-picture">💌</span>
+          <span class="card-title">A birthday letter</span>
+          <span class="card-subtitle">A few words from the heart</span>
+          <span class="card-tap">Tap to open ↗</span>
+        </button>
+
+        <button class="surprise-card purple" data-surprise="memory">
+          <span class="card-picture">📸</span>
+          <span class="card-title">A little memory</span>
+          <span class="card-subtitle">Some moments are treasures</span>
+          <span class="card-tap">Tap to open ↗</span>
+        </button>
+
+        <button class="surprise-card yellow" data-surprise="wish">
+          <span class="card-picture">🌟</span>
+          <span class="card-title">A wish for you</span>
+          <span class="card-subtitle">A pocketful of birthday magic</span>
+          <span class="card-tap">Tap to open ↗</span>
+        </button>
+
+        <button class="surprise-card mint" data-surprise="gift">
+          <span class="card-picture">🎁</span>
+          <span class="card-title">One last surprise</span>
+          <span class="card-subtitle">There’s a gift waiting</span>
+          <span class="card-tap">Tap to open ↗</span>
+        </button>
+      </div>
+
+      <div id="surpriseBox" class="surprise-box hidden" aria-live="polite">
+        <div id="surpriseEmoji" class="surprise-emoji">💗</div>
+        <h3 id="surpriseTitle"></h3>
+        <p id="surpriseText"></p>
+        <button id="closeSurprise" class="close-button" type="button">Close card</button>
+      </div>
+    </section>
+
+    <section class="letter-section">
+      <div class="letter-illustration">🧁</div>
+      <p class="eyebrow">A little reminder</p>
+      <h2>You make ordinary days feel special.</h2>
+      <p>
+        I hope this birthday brings you the same warmth and happiness
+        that you bring to the people around you. You deserve kindness,
+        laughter, wonderful surprises, and so many reasons to smile.
+      </p>
+      <div class="floating-hearts">💗 💕 💗</div>
+    </section>
+
+    <section class="final-section">
+      <div class="big-gift">🎁</div>
+      <h2>Ready for your final surprise?</h2>
+      <p>Take a deep breath and tap the gift.</p>
+      <button id="giftButton" class="start-button" type="button">
+        Open your gift 🎀
+      </button>
+      <p id="giftMessage" class="gift-message hidden">
+        Surprise! You are loved, celebrated, and deserving of beautiful things.
+        Happy Birthday! 🎂💖
+      </p>
+    </section>
+  </main>
+
+  <footer>Made with a little code and a lot of heart ♡</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
